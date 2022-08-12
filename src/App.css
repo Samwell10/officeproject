@@ -1,38 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+  --mainbackgroundcolor: #E5E5E5;
+  --topbarbackgroundcolor: #424242;
+  --textcolor1: #861F41;
+  --textcolor2: #C4C4C4;
+  --textcolor3: #363636;
+  --buttoncolor: #23CB1F;
+  --searchbartext:#9B9898;
+}
 .App {
-  text-align: center;
+  width: 100%;
+  height: 120vh;
+  background-color: var(--mainbackgroundcolor);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* for sidebar */
+.sidebar{
+  height: 120vh;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  background-color: #ffff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-con{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.links nav{
+  box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.25);
+  list-style: none;
+  margin-top: 20px;
+  height: 105vh;
+  
+}
+.links li{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  transition: 0.5s ease;
+  color: var(--textcolor2);
+  font-weight: 700;
+  padding: 10px;
+  padding-left: 50px;
+}
+.links li:hover{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  color: var(--textcolor1);
+  background-color: var(--mainbackgroundcolor);
+}
+.address-name{
+  margin-left: 20px;
+}
+.sidebar #active{
+  color: var(--textcolor1);
+}
+/* for topbar */
+.topbar{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 250px;
+  width: calc(100%-250px);
+  height: 110px;
+  background-color: var(--topbarbackgroundcolor);
+}
+.searchbar{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  color: var(--searchbartext);
+}
+.search{
+  margin-left: 5px;
+  padding-left: 10px;
+  background: transparent;
+  border: none;;
+  color: var(--searchbartext);
+}
+.search::placeholder{
+  color: var(--searchbartext);
+  font-size: 0.8rem;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+}
+.notificationSide{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.notificationSide div{
+  margin-right: 20px;
+}
+.setupbutton{
+  height: 30px;
+  width: 100px;
+  color: #ffff;
+  background-color: var(--textcolor1);
+  border: none;
+  font-size: 10px;
+  font-family: "poppins";
+}
+.bell{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: var(--searchbartext);
+  font-size: 25px;
+}
+.bellnumber{
+  position: absolute;
+  top: -8px;
+  left: 10px;
+}
+.bellnumber p{
+  text-align: center;
   color: white;
+  font-size: 0.6rem;
+  background-color: #D53434;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
 }
-
-.App-link {
-  color: #61dafb;
+.help{
+  text-align: center;
+  color: var(--searchbartext);
+  font-size: 12px;
 }
+.dropbox{
+  color: var(--searchbartext);
+  font-weight: 700;
+  display: inline-flex;
+  font-size: 12px;
+  margin-top: -5px;
+}
+.dropicon{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-left: 5px;
+} 
+/* for content */
+.content{
+  margin-left: 280px;
+  padding: 20px;
+  width: calc(100%-250px);
+}
+.title{
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--textcolor1);
+}
+.content-title{
+  color: var(--textcolor1);
+  font-weight: 700;
+}
+.grid-container{
+  margin-right: 60px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+.menu{
+  height: 200px;
+  background-color: #ffff;
+  padding-left: 40px;
+  padding-right: 20px;
+  border-radius: 30px;
+}
+.menu-name{
+  font-size: 12px;
+  font-weight: 700;
+}
+.menus img{
+  margin-top: -5px;
+  width: 100px;
+  height: 80px;
+}
+.menu-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.order, .report{
+  height: 200px;
+  background-color: #ffff;
+  padding-left: 40px;
+  padding-right: 20px;
+  border-radius: 30px;
+}
+.order-container, .report-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.order-content, .report-content{
+  margin-left: 20px;
+}
+.order-icon, .report-icon{
+  font-size: 40px;
+  color: var(--textcolor1);
+}
+.order-inner, .report-inner{
+  display: flex;
+}
+.order-name, .report-name{
+  font-size: 12px;
+}
+.order-price, .report-price{
+  margin-top: -10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.employee{
+  height: 200px;
+  background-color: #ffff;
+  padding-left: 40px;
+  padding-right: 20px;
+  border-radius: 30px;
+}
+.employees{
+  display: flex;
+  color: var(--textcolor3);
+  font-size: 14px;
+}
+.employees{
+  width: 100%;
+}
+.employee-id{
+  font-weight: 700;
+}
+.employee-name{
+  margin-left: 30px;
+  font-weight: 500;
+  width: 120px;
+}
+.employee-job{
+  color: var(--textcolor1);
+  font-weight: 500;
+  text-align: left;
+  margin-left: 90px;
+}
+.transaction{
+  background-color: white;
+  width: 85%;
+  padding: 20px;
+  margin-top: 20px;
+  padding-left: 40px;
+  border-radius: 30px;
+}
+.transaction-nav nav{
+  list-style: none;
+  display: inline-flex;
+}
+.transaction-nav nav li a{
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Poppins";
+}
+.active-transaction{
+  position: relative;
+  color: var(--textcolor3);
+  margin-right: 30px;
+  font-weight: 700;
+}
+.active-transaction::before{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--textcolor1);
+  position: absolute;
+  bottom: -1px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.nonactive-transaction{
+  color: var(--searchbartext);
+  font-weight: 500;
+}
+.transaction-user{
+  width: 100%;
+  display: flex;
+  /* background-color: #23CB1F; */
+}
+.transaction-center{
+  display: flex;
+  align-items: center;
+}
+.transaction-image{
+  width: 50px;
+  height: 50px;
+}
+.transaction-info{
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.customer{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--textcolor3);
+}
+.time{
+  font-size: 10px;
+  color: var(--searchbartext);
+  margin-top: -10px;
+}
+.address{
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.items-ordered{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.items-ordered nav{
+  list-style: none;
+}
+.items-ordered nav li{
+  font-size: 14px;
+}
+.transaction-remark{
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+.transaction-remark button{
+  width: 90px;
+  height: 20px;
+  background-color: var(--buttoncolor);
+  color: #ffff;
+  font-size: 10px;
+  border: none;
+}
+.order-no{
+  font-size: 10px;
+  margin-top: 0px;
+  margin-left: 20px;
+  color: var(--buttoncolor);
+}
+.bill{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  color: var(--textcolor1);
 }
