@@ -16,7 +16,11 @@ const Sidebar = () => {
                                 className="link-path"
                                 id ={window.location.pathname == val.link ? "active" : ""}
                                 onClick = {()=>{window.location.pathname = val.link}}>
-                                <div>{val.icon}</div>
+                                <div className="sideicon">
+                                    <div className="sideicon-inner">
+                                        {val.icon}
+                                    </div>
+                                </div>
                                 <div className="address-name">{val.title}</div>
                             </li>
                         )

@@ -7,6 +7,7 @@ const Content = () => {
     return ( 
         <div className="content">
              <p className="title">Welcome back, Katy's Kitchen</p>
+             <p className="subtitle">Bestsellers</p>
              <div className="grid-container">
                  <Menu/>
                  <Order/>
