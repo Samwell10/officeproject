@@ -12,26 +12,14 @@ const Topbar = () => {
                             </div>
                             <form>
                                 <input 
-                                type ="text"
-                                className="search"
-                                placeholder = "Search"
+                                    type ="text"
+                                    className="search"
+                                    placeholder = "Search"
                                 />
-                                {/* <div className="bell">
-                                <div className="bellicon">
-                                        <NotificationsNoneOutlinedIcon/>
-                                </div>
-                                <div className="bellnumber">
-                                        <p>1</p>
-                                </div>
-                                </div>           */}
-                                    </form>      
+                            </form>      
                      </div>
-            </div>
-            
+            </div> 
             <div className="notificationSide">
-                <div className="setup">
-                    <button className="setupbutton">Setup Guides</button>
-                </div>
                 <div className="bell">
                     <div className="bellicon">
                         <NotificationsNoneOutlinedIcon/>
