@@ -1,5 +1,5 @@
 import { TransactionData } from "./TransactionData";
-import user from '../images/usertransaction.svg'
+import user from '../../images/usertransaction.svg'
 const Transaction = () => {
     return ( 
         <div className="transaction">

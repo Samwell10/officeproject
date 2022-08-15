@@ -1,6 +1,6 @@
- import starter from '../images/starter.png';
- import bread from '../images/bread.png';
- import salsa from '../images/salsa.png'
+ import starter from '../../images/starter.png';
+ import bread from '../../images/bread.png';
+ import salsa from '../../images/salsa.png'
  export const MenuData = [
     {
         title:"Mix Starter",

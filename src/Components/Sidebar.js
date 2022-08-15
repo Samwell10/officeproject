@@ -1,6 +1,7 @@
 import "../App.css";
 import { SidebarDetails } from "./SidebarDetails";
-import logo from '../images/logo.svg'
+import logo from '../images/logo.svg';
+import {Link} from 'react-router-dom'
 const Sidebar = () => {
     return ( 
         <div className="sidebar">
@@ -9,7 +10,7 @@ const Sidebar = () => {
             </div>
             <div className="links">
                 <nav>
-                    {SidebarDetails.map((val, key)=>{
+                    {/* {SidebarDetails.map((val, key)=>{
                         return(
                             <li
                                 key={key}
@@ -24,7 +25,55 @@ const Sidebar = () => {
                                 <div className="address-name">{val.title}</div>
                             </li>
                         )
-                    })}
+                    })} */}
+                    <Link to="/">
+                        <div className="sideicon">
+                            {/* <div className="sideicon-inner">
+                                {val.icon}
+                            </div> */}
+                        </div>
+                        <div className="address-name">Resturant</div>
+                    </Link>
+                    <Link to="/Pages/Menu/Menupage">
+                        <div className="sideicon">
+                            {/* <div className="sideicon-inner">
+                                {val.icon}
+                            </div> */}
+                        </div>
+                        <div className="address-name">Resturant</div>
+                    </Link>
+                    <Link to="/Pages/Orders/Orderpage">
+                        <div className="sideicon">
+                            {/* <div className="sideicon-inner">
+                                {val.icon}
+                            </div> */}
+                        </div>
+                        <div className="address-name">Resturant</div>
+                    </Link>
+                    <a href="/Pages/Report/Report">
+                        <div className="sideicon">
+                            {/* <div className="sideicon-inner">
+                                {val.icon}
+                            </div> */}
+                        </div>
+                        <div className="address-name">Resturant</div>
+                    </a>
+                    <Link to="/Pages/Transactions/Transactionpage">
+                        <div className="sideicon">
+                            {/* <div className="sideicon-inner">
+                                {val.icon}
+                            </div> */}
+                        </div>
+                        <div className="address-name">Resturant</div>
+                    </Link>
+                    <Link to="/Pages/Employee/Employeepage">
+                        <div className="sideicon">
+                            {/* <div className="sideicon-inner">
+                                {val.icon}
+                            </div> */}
+                        </div>
+                        <div className="address-name">Resturant</div>
+                    </Link>
                     </nav>
             </div>
            

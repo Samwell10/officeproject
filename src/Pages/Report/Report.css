@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+  --mainbackgroundcolor: #E5E5E5;
+  --topbarbackgroundcolor: #424242;
+  --textcolor1: #861F41;
+  --textcolor2: #C4C4C4;
+  --textcolor3: #363636;
+  --buttoncolor: #23CB1F;
+  --searchbartext:#9B9898;
+}
+.reportmain{
+    margin-top: 0px;
+    margin-left: 250px;
+    margin-right: 30px;
+    background-color: var(--mainbackgroundcolor);
+    font-family: "Poppins";
+}
+.report-header-outer{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.report-header-inner{
+    display: flex;
+    align-items: center;
+}
+.reporticon span svg{
+    font-size: 30px;
+    font-weight: 900;
+}
+.reportTitle{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--textcolor3);
+}
+.reportTitle span svg{
+    color: var(--textcolor1);
+    font-size: 25px;
+}
+.reportEdit{
+    color: var(--textcolor1);
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+.report-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    margin-left: 0px;
+    /* margin-left: 40px; */
+}
+.active-data{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.active-num{
+    color: var(--textcolor1);
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px;
+}
+.active-name{
+    color: var(--textcolor3);
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0px;
+}
+.report-data{
+    background-color: #ffff;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.report-data-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 130px;
+}
+.report-icon svg{
+    font-size: 35px;
+    margin-top: 15px;
+}
+.report-text{
+    margin-left: 15px;
+}
+.purchases{
+    margin-top: -140px;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.purchase-title p{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--textcolor3);
+    margin: 0;
+    margin-left: 30px;
+}
+.purchases-header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: var(--textcolor1);
+    font-weight: 600;
+}
+table{
+    padding-right: 30px;
+    border: none;
+}
+table tbody tr td{
+    padding-top: 30px;
+    width: 50%;
+}
+.tableprice{
+    color: var(--textcolor1);
+    font-weight: 700;
+    text-align: right;
+}
+.purchase-content{
+    margin-left: 30px;
+}
+.piechart{
+    width: 400px;
+}
+@media(max-width: 1000px){
+    .sidebar{
+        display: none;
+    }
+    .reportmain{
+        margin: 0;
+    }
+    .report-header-outer{
+        width: 100%;
+        position: absolute;
+        top: -7%;
+    }
+    .report-header-inner{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .reporticon{
+        color: #fff;
+        margin-left: 20px;
+    }
+    .reportTitle, .reportTitle span svg{
+        color: #fff;
+        text-align: center;
+    }
+    .reportEdit{
+        color: #fff;
+        width: 70%;  
+        text-align: right;
+        margin-right: 20px;
+    }
+    .report-content-outer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .report-content{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.7fr 0.5fr 1fr;
+        grid-row-gap: 0px;
+        grid-column-gap: 0px;
+        grid-template-areas:    
+            "chart"
+            "report"
+            "active"
+            "purchase"
+        ;
+        grid-gap: 60px;
+    }
+    .chart{
+        display: flex;
+        justify-content: center;
+        grid-area: chart;
+    }
+    .purchase-title{
+        display: none;
+    }
+    .piechart{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    .report-data{
+        margin-top: -40px;
+        grid-area: report;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .report-data-inner{
+        width: 100%;
+        padding: 10px;
+    }
+    .report-icon svg{
+        font-size: 35px;
+        margin-top: 15px;
+    }
+    .active-data{
+        margin-top: -20px;
+        grid-area: active;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .purchases{
+        margin-top:-130px;
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-area: purchase;
+    }
+    .purchaselist{
+        display: block;
+    }
+    
+}
+@media(max-width: 380px){
+    .piechart{
+        width: 220px;
+        display: flex;
+        justify-content: center;
+    }
+    .report-data{
+        width: 280px;
+    }
+    .report-data-inner{
+        grid-column-gap: 20px;
+    }
+    .report-icon svg{
+        font-size: 25px;
+        margin-top: 15px;
+    }
+}
+@media(max-width:330px){
+    .report-data{
+        width: 250px;
+    }
+    .report-data-inner{
+        grid-column-gap: 20px;
+    }
+    .report-icon svg{
+        font-size: 25px;
+    }
+    .active-num{
+        font-size: 20px;
+    }
+    .active-name{
+        font-size: 10px;
+    }
+}
+@media(max-width: 300px){
+    .report-data{
+        width: 200px;
+    }
+    .report-data-inner{
+        grid-column-gap: 20px;
+    }
+    .report-icon svg{
+        font-size: 25px;
+    }
+    .active-num{
+        font-size: 18px;
+    }
+    .active-name{
+        font-size: 8px;
+    }
+}

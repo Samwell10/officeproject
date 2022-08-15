@@ -24,7 +24,7 @@ import PermIdentityIcon from '@mui/icons-material/PermIdentity';
         {
             title:"Report",
             icon:<BarChartIcon/>,
-            link:"/Report"
+            link:"./Pages/Report"
         },
         {
             title:"Transaction",

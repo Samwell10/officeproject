@@ -18,6 +18,7 @@ body{
   padding: 0;
   font-family: "Poppins";
 }
+
 /* for sidebar */
 .sidebar{
   box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.189);
@@ -217,7 +218,6 @@ textarea:focus{
 .order-container, .report-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
 }
 .order-content, .report-content{
   margin-left: 20px;
