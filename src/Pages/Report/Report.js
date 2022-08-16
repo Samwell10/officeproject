@@ -18,19 +18,19 @@ const Report = () => {
         backgroundColor: ["#861F41","#975C70","#171717"],
       }]
     })
-    // const config ={
-    //   type: 'Doughnut',
-    //   options:{
-    //     plugins:{
-    //       legend:{
-    //         label:{
-    //           usePointStyles: true,
-    //           pointStyle: 'circle'
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
+    const config ={
+      type: 'Doughnut',
+      options:{
+        plugins:{
+          legend:{
+            label:{
+              usePointStyles: true,
+              pointStyle: 'circle'
+            }
+          }
+        }
+      }
+    }
     return ( 
         <div className="reportmain">
           <div className="report-header">

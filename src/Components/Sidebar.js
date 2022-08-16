@@ -17,63 +17,17 @@ const Sidebar = () => {
                                 className="link-path"
                                 id ={window.location.pathname == val.link ? "active" : ""}
                                 onClick = {()=>{window.location.pathname = val.link}}>
-                                <div className="sideicon">
-                                    <div className="sideicon-inner">
-                                        {val.icon}
+                                <Link to={val.link}>
+                                    <div className="sideicon">
+                                        <div className="sideicon-inner">
+                                            {val.icon}
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="address-name">{val.title}</div>
+                                    <div className="address-name">{val.title}</div>
+                                </Link>
                             </li>
                         )
                     })}
-                    {/* <Link to="/">
-                        <div className="sideicon">
-                            <div className="sideicon-inner">
-                                {val.icon}
-                            </div>
-                        </div>
-                        <div className="address-name">Resturant</div>
-                    </Link>
-                    <Link to="/Pages/Menu/Menupage">
-                        <div className="sideicon">
-                            <div className="sideicon-inner">
-                                {val.icon}
-                            </div>
-                        </div>
-                        <div className="address-name">Resturant</div>
-                    </Link>
-                    <Link to="/Pages/Orders/Orderpage">
-                        <div className="sideicon">
-                            <div className="sideicon-inner">
-                                {val.icon}
-                            </div>
-                        </div>
-                        <div className="address-name">Resturant</div>
-                    </Link>
-                    <a href="/Pages/Report/Report.js">
-                        <div className="sideicon">
-                            <div className="sideicon-inner">
-                                {val.icon}
-                            </div>
-                        </div>
-                        <div className="address-name">Resturant</div>
-                    </a>
-                    <Link to="/Pages/Transactions/Transactionpage">
-                        <div className="sideicon">
-                            <div className="sideicon-inner">
-                                {val.icon}
-                            </div>
-                        </div>
-                        <div className="address-name">Resturant</div>
-                    </Link>
-                    <Link to="/Pages/Employee/Employeepage">
-                        <div className="sideicon">
-                            <div className="sideicon-inner">
-                                {val.icon}
-                            </div>
-                        </div>
-                        <div className="address-name">Resturant</div>
-                    </Link> */}
                     </nav>
             </div>
            

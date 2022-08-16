@@ -9,32 +9,32 @@ import PermIdentityIcon from '@mui/icons-material/PermIdentity';
         {
             title:"Resturant",
             icon:<HouseIcon/>,
-            link:"/"
+            link:"/officeproject"
         },
         {
             title:"Menu",
             icon:<MenuBookRoundedIcon/>,
-            link:"/Menu"
+            link:"/Pages/Menu/Menupage"
         },
         {
             title:"Order",
             icon:<LocalOfferRoundedIcon/>,
-            link:"/Order"
+            link:"./Pages/Orders/Orderpage"
         },
         {
             title:"Report",
             icon:<BarChartIcon/>,
-            link:"./Pages/Report"
+            link:"/Pages/Report/Report.js"
         },
         {
             title:"Transaction",
             icon:<TuneIcon/>,
-            link:"/Transaction"
+            link:"/Pages/Transactions/Transactionpage"
         },
         {
             title:"Employee",
             icon:<PermIdentityIcon/>,
-            link:"/Employee"
+            link:"/Pages/Employee/Employeepage"
         }
     ]
  

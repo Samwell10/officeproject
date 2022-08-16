@@ -14,10 +14,11 @@ function App() {
           <div className="App">
           <Sidebar/>
             <Topbar/>
+            
               <div className="middlepage"> 
                  <Switch>
-                    <Route path="/">
-                      <Report/>
+                    <Route path="/officeproject">
+                      <Content/>
                     </Route>
                     <Route path="/Pages/Menu/Menupage.js">
                     <Menupage/>
