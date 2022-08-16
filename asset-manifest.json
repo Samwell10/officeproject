@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/officeproject/static/css/main.c684d677.css",
-    "main.js": "/officeproject/static/js/main.9b041c15.js",
+    "main.css": "/officeproject/static/css/main.0bdcf3df.css",
+    "main.js": "/officeproject/static/js/main.0edbc5e8.js",
     "static/js/787.f181b8e6.chunk.js": "/officeproject/static/js/787.f181b8e6.chunk.js",
     "static/media/logo.svg": "/officeproject/static/media/logo.d562c73edbefce8403db1a1ec7647cd7.svg",
     "static/media/starter.png": "/officeproject/static/media/starter.fff43d85560a09a72a8e.png",
@@ -9,12 +9,12 @@
     "static/media/salsa.png": "/officeproject/static/media/salsa.4a046bf73c94f2f939cd.png",
     "static/media/usertransaction.svg": "/officeproject/static/media/usertransaction.4b6297b41f7844167c783d9dc1c1ff76.svg",
     "index.html": "/officeproject/index.html",
-    "main.c684d677.css.map": "/officeproject/static/css/main.c684d677.css.map",
-    "main.9b041c15.js.map": "/officeproject/static/js/main.9b041c15.js.map",
+    "main.0bdcf3df.css.map": "/officeproject/static/css/main.0bdcf3df.css.map",
+    "main.0edbc5e8.js.map": "/officeproject/static/js/main.0edbc5e8.js.map",
     "787.f181b8e6.chunk.js.map": "/officeproject/static/js/787.f181b8e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c684d677.css",
-    "static/js/main.9b041c15.js"
+    "static/css/main.0bdcf3df.css",
+    "static/js/main.0edbc5e8.js"
   ]
 }
