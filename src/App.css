@@ -10,7 +10,7 @@
 }
 .App {
   width: 100%;
-  height: 120vh;
+  height: 100%;
   background-color: var(--mainbackgroundcolor);
 }
 body{
@@ -209,6 +209,9 @@ textarea:focus{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.links-2{
+  display: none;
+}
 .order, .report{
   height: 200px;
   background-color: #ffff;
@@ -220,7 +223,7 @@ textarea:focus{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.order-content, .report-content{
+.order-content, .report-content-2{
   margin-left: 20px;
 }
 .order-icon, .report-icon{
@@ -460,67 +463,75 @@ textarea:focus{
     margin: 0;
     margin-top: -20px;
     width: 80%;
+    height: auto;
     background-color: rgba(255, 255, 255, 0);
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
   }
   .menu-name{
     font-size: 12px;
   }
   .menus img{
-    width: 160px;
-    height: 150px;
+    width: 152px;
+    height: 102px;
     border: 1px solid transparent;
     border-radius: 8px;
   }
   .menu-content{
     grid-gap: 50px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
   }
-  .sidebar{
-    width: 100%;
-    height: 0;
-    position: absolute;
-    top: 54.5%;
-    background-color: transparent;
+  .links-2{
     display: flex;
     justify-content: center;
   }
-  .logo-con{
-    display: none;
-  }
-  .address-name{
-    color: var(--textcolor3);
-    margin-left: 0px;
-    margin-top: 10px;
-    font-size: 12px;
-    text-align: center;
-  }
-  .links nav{
-    box-shadow: 0px 0px 0px transparent;
-    width: 70%;
-    margin-left: 2%;
+  .links-2 nav{
     display: inline-flex;
-    height: 0vh;
+    list-style: none;
+    text-align: center;
   }
-  .links nav li:first-child{
+  .links-2 nav li{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .links-2 nav li:first-child{
     display: none;
   }
-  .links li{
-    display: block;
-    padding-left: 0px;
+  .links-2 nav li a{
+    text-decoration: none;
     color: var(--textcolor1);
-    height: 0px;
+    font-family: "Poppins";
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  .sideicon{
-    width: 50px;
-    padding: 7px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .sideicon2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .sideicon-inner2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
-    text-align: center;
+    width: 50px;
+    height: 50px;
     background-color: #ffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .address-name2{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--textcolor3);
+    margin-top: 10px;
+  }
+  .sidebar{
+    display: none;
+  }
+  .logo-con{
+    display: none;
   }
   .order, .report, .employee{
     display: none;
@@ -597,12 +608,6 @@ textarea:focus{
     display: flex;
     justify-content: center;
   }
-  .menus img{
-    width: 120px;
-    height: 120px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-  }
   .menu-content{
     grid-gap: 20px;
   }
@@ -670,46 +675,36 @@ textarea:focus{
 
   }
 }
-@media(max-width: 450px){
-  .menus img{
-    width: 100px;
-    height: 100px;
-  }
-}
-@media(max-width: 389px){
-  .menu{
-    padding-bottom: 50px;
-  }
-  .menus img{
-    width: 80px;
-  }
+@media(max-width: 400px){
+
   .menu-name{
     font-size: 10px;
     font-weight: 700;
   }
-  .sidebar{
-    top: 50%;
+  .sideicon-inner2{
+    width: 35px;
+    height: 35px;
   }
-  .sideicon{
-    padding: 0px;
-    padding-top: 5px;
-    padding-bottom:5px;
+  .sideicon-inner2 svg{
+    font-size: 14px;
   }
-  .address-name{
+  .address-name2{
+    font-size: 12px;
+  }
+  
+}
+@media(max-width: 340px){
+  .sideicon-inner2{
+    width: 25px;
+    height: 25px;
+  }
+  .address-name2{
     font-size: 10px;
-    text-align: center;
   }
 }
 @media(max-width: 310px){
   .title{
     font-size: 25px;
-  }
-  .menu{
-    padding-bottom: 30px;
-  }
-  .menus img{
-    width: 60px;
-    height: 60px;
   }
   .sidebar{
     top: 48%;

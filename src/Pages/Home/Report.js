@@ -14,7 +14,7 @@ const Report = () => {
                             key={key}>
                             <div className="report-inner">
                                 <div className="report-icon">{report.icon}</div>
-                                <div className="report-content">
+                                <div className="report-content-2">
                                     <p className="report-name">{report.title}</p>
                                     <p className="report-price">{report.price}</p>
                                 </div>

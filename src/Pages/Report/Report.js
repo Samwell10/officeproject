@@ -7,8 +7,6 @@ import { PurchaseData } from './PurchaseData';
 import Piechart from './Piechart';
 import { useState } from 'react';
 import { ChartData } from './ChartData';
-// import Sidebar from '../Components/Sidebar';
-// import Topbar from '../Components/Topbar';
 const Report = () => {
     const [userData, setUserData] = useState({
       labels: ChartData.map((data) => data.name),

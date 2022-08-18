@@ -1,3 +1,4 @@
+// import "./Sidebar.css"
 import "../App.css";
 import { SidebarDetails } from "./SidebarDetails";
 import logo from '../images/logo.svg';
@@ -28,9 +29,9 @@ const Sidebar = () => {
                             </li>
                         )
                     })}
+                    
                     </nav>
-            </div>
-           
+            </div>          
             
         </div>
     );
