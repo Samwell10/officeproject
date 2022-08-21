@@ -1,13 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-:root{
-  --mainbackgroundcolor: #E5E5E5;
-  --topbarbackgroundcolor: #424242;
-  --textcolor1: #861F41;
-  --textcolor2: #C4C4C4;
-  --textcolor3: #363636;
-  --buttoncolor: #23CB1F;
-  --searchbartext:#9B9898;
-}
+
+
 .reportmain{
     margin-top: 0px;
     margin-left: 280px;

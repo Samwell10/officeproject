@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+  --mainbackgroundcolor: #E5E5E5;
+  --topbarbackgroundcolor: #424242;
+  --textcolor1: #861F41;
+  --textcolor2: #C4C4C4;
+  --textcolor3: #363636;
+  --buttoncolor: #23CB1F;
+  --searchbartext:#9B9898;
+}
+.transactionpage{
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 280px;
+    margin-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    background-color: var(--mainbackgroundcolor);
+    font-family: "Poppins";
+}
+.transaction-header-outer{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.transaction-header-inner{
+    display: flex;
+    align-items: center;
+}
+.transactionicon a{
+    text-decoration: none;
+    color: var(--textcolor3);
+}
+.transactionicon span svg{
+    font-size: 30px;
+    font-weight: 900;
+}
+.transactionTitle{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--textcolor3);
+}
+.transactionTitle span svg{
+    color: var(--textcolor1);
+    font-size: 25px;
+    margin-right: 5px;
+}
+.transactionsort{
+    display: flex;
+    align-items: center;
+    color: var(--textcolor1);
+    font-size: 20px;
+    font-weight: 700;
+}
+.transactionsort p{
+    margin-left: 10px;
+}
+.transaction-top{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: var(--textcolor1);
+    font-weight: 600;
+}
+.transaction-top p{
+    width: 150px;
+}
+.transaction-date{
+    font-size: 14px;
+    margin-left: 50px;
+}
+.transaction-table{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.transaction-user-details{
+    display: flex;
+    justify-content: space-between;
+}
+.transaction-user-details div{
+    width: 150px;
+}
+.transaction-center-image{
+    display: flex;
+    align-items: center;
+}
+.transaction-title{
+    margin-left: -22%;
+    display: flex;
+    align-items: center;
+}
+.discount{
+    font-size: 14px;
+    font-weight: 600;
+}
+.staff-details, .food-order, .amount{
+    display: flex;
+    align-items: center;
+}
+.staff,.order-number, .amount p{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--textcolor1);
+}
+.occupation, .food{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--searchbartext);
+    margin-top: -10px;
+}
+@media(max-width: 1000px){
+    .transactionpage{
+        margin: 0;
+    }
+    .transaction-header-outer{
+        width: 100%;
+        position: absolute;
+        top: -7%;
+    }
+    .transaction-header-inner{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .transactionicon span svg{
+        color: #fff;
+        margin-left: 20px;
+    }
+    .transactionTitle, .transactionTitle span svg{
+        color: #fff;
+        text-align: center;
+    }
+    .transactionsort{
+        color: #fff; 
+        text-align: center;
+        margin-right: 20px;
+    }
+}

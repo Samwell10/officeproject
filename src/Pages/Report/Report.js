@@ -1,4 +1,5 @@
 import '../Report/Report.css';
+import { Link } from 'react-router-dom';
 import ChevronLeftOutlinedIcon from '@mui/icons-material/ChevronLeftOutlined';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import { ActiveData } from './ActiveData';
@@ -35,7 +36,9 @@ const Report = () => {
             <div className="report-header-outer">
                 <div className='report-header-inner'>
                   <div className="reporticon">
-                    <span><ChevronLeftOutlinedIcon/></span>
+                    <Link to="/officeproject">
+                      <span><ChevronLeftOutlinedIcon/></span>
+                    </Link>
                   </div>
                   <div className="reportTitle">
                       <span><BarChartIcon/></span>
