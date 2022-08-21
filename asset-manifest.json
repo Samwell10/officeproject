@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/officeproject/static/css/main.bfd49195.css",
-    "main.js": "/officeproject/static/js/main.8b2f88e9.js",
-    "static/js/787.f181b8e6.chunk.js": "/officeproject/static/js/787.f181b8e6.chunk.js",
-    "static/media/logo.svg": "/officeproject/static/media/logo.d562c73edbefce8403db1a1ec7647cd7.svg",
-    "static/media/starter.png": "/officeproject/static/media/starter.fff43d85560a09a72a8e.png",
-    "static/media/bread.png": "/officeproject/static/media/bread.27ef1ef6c2e0a158c2a6.png",
-    "static/media/salsa.png": "/officeproject/static/media/salsa.4a046bf73c94f2f939cd.png",
-    "static/media/usertransaction.svg": "/officeproject/static/media/usertransaction.4b6297b41f7844167c783d9dc1c1ff76.svg",
-    "index.html": "/officeproject/index.html",
-    "main.bfd49195.css.map": "/officeproject/static/css/main.bfd49195.css.map",
-    "main.8b2f88e9.js.map": "/officeproject/static/js/main.8b2f88e9.js.map",
-    "787.f181b8e6.chunk.js.map": "/officeproject/static/js/787.f181b8e6.chunk.js.map"
+    "main.css": "/restaurant/static/css/main.408276dc.css",
+    "main.js": "/restaurant/static/js/main.faab1773.js",
+    "static/js/787.f181b8e6.chunk.js": "/restaurant/static/js/787.f181b8e6.chunk.js",
+    "static/media/logo.svg": "/restaurant/static/media/logo.d562c73edbefce8403db1a1ec7647cd7.svg",
+    "static/media/starter.png": "/restaurant/static/media/starter.fff43d85560a09a72a8e.png",
+    "static/media/bread.png": "/restaurant/static/media/bread.27ef1ef6c2e0a158c2a6.png",
+    "static/media/salsa.png": "/restaurant/static/media/salsa.4a046bf73c94f2f939cd.png",
+    "static/media/usertransaction.svg": "/restaurant/static/media/usertransaction.4b6297b41f7844167c783d9dc1c1ff76.svg",
+    "static/media/refund.svg": "/restaurant/static/media/refund.8ef0af998d2150b085d87dc17a81cf40.svg",
+    "index.html": "/restaurant/index.html",
+    "static/media/discount.svg": "/restaurant/static/media/discount.32f9fb6249dfdf86647ad04d7b051ece.svg",
+    "main.408276dc.css.map": "/restaurant/static/css/main.408276dc.css.map",
+    "main.faab1773.js.map": "/restaurant/static/js/main.faab1773.js.map",
+    "787.f181b8e6.chunk.js.map": "/restaurant/static/js/787.f181b8e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfd49195.css",
-    "static/js/main.8b2f88e9.js"
+    "static/css/main.408276dc.css",
+    "static/js/main.faab1773.js"
   ]
 }
